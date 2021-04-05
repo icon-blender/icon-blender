@@ -1,10 +1,10 @@
 
-## CSVG Icons
+# CSVG Icons
 
 Mix and match SVG icons from among 87,534 icons and 93 icon packages.
 
 
-### Features
+## Features
 
 - **Include only the icons you need** <br/>Custom icon bundles means smaller transfer sizes and faster page loading
 - **Use icons from multiple packages** <br/>Adding icons from another icon package doesn't require including entire packages
@@ -13,7 +13,7 @@ Mix and match SVG icons from among 87,534 icons and 93 icon packages.
 - **Seamless integration with SCSS workflow** <br/>No additional software to install or configure
 
 
-### Usage
+## Usage
 
 example.scss
 ```scss
@@ -28,7 +28,7 @@ example.html
 <i class="cs cs-search"></i>
 ```
 
-### Styling
+## Styling
 
 Normally, you can't apply custom styles to embedded SVG images.
 CSVG gets around this limitation by embedding SVG images with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">mask-image</a>.
@@ -38,7 +38,7 @@ With this approach, you can apply color, color gradients and other custom stylin
 <i class="cs-search" style="background:blue"></i>
 ```
 
-### Available Icon Packages
+## Available Icon Packages
 
 Icon definitions from [Iconfy](https://github.com/iconify/collections-json)
 
