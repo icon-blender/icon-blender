@@ -1,7 +1,7 @@
 {
   "name": "csvg-icons",
   "version": "1.0.0-alpha",
-  "description": "SVG Icons in CSS",
+  "description": "Mix and match SVG icons from among 87,534 icons and 93 icon packages",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,8 @@
     "bootstrap"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "TBD",
+  "sass": "scss/csvg.scss",
   "dependencies": {},
   "devDependencies": {
     "@iconify/json": "^1.1.325",

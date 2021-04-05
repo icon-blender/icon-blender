@@ -70,7 +70,8 @@ for(const collection_key in collections){
 	CreateCollectionSCSS(collection_key);
 
 	let collection					= collections[collection_key];
-	readme_list[collection_key]		= '<li><a href="'+ collection.url+'">'+collection.name +'</a></li>';
+	readme_list[collection_key]		= '<li><a href="'+ collection.url+'">'+collection.name +'</a> ('+collection_key+')</li>';
+
 	total_icons						+= collection.total;
 }
 
