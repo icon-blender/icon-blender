@@ -1,6 +1,6 @@
 {
   "name": "csvg-icons",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha.1",
   "description": "Mix and match SVG icons from among 87,534 icons and 93 icon packages",
   "main": "index.js",
   "scripts": {
