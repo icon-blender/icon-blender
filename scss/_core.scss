@@ -1,0 +1,39 @@
+
+.#{$cssvg_prefix}-embed{
+	display:inline-block;
+	height:1em;
+	width:1em;
+}
+
+
+.#{$cssvg_prefix}{
+	display:inline-block;
+	height:1em;
+	background-color: attr(data-color color);
+	background-color: #333; //attr(data-color color);
+	vertical-align: -.125em;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+}
+
+.#{$cssvg_prefix}-fw{
+	width: 1.28571429em;
+}
+
+
+.#{$cssvg_prefix}-lg{
+	height:1.33333333em;
+	width:1.33333333em;
+	line-height: 0.75em;
+	vertical-align: -15%;
+}
+
+.#{$cssvg_prefix}-3x{
+	font-size:3em;
+}
+
+.#{$cssvg_prefix}-flip-horizontal{
+	transform: scale(-1, 1);
+}

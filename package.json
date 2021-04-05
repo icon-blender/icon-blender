@@ -1,0 +1,26 @@
+{
+  "name": "csvg-icons",
+  "version": "1.0.0-alpha",
+  "description": "SVG Icons in CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "node bin/build-scss.js"
+  },
+  "keywords": [
+    "SVG",
+    "Icons",
+    "CSS",
+    "CSSS",
+    "fontawesome",
+    "bootstrap"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@iconify/json": "^1.1.325",
+    "@iconify/json-tools": "^1.0.10",
+    "lodash": "^4.17.21"
+  }
+}

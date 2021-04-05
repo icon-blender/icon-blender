@@ -1,0 +1,11 @@
+
+
+@mixin csvgIcon( $collection, $name ){
+
+	.#{$cssvg_prefix}-#{$name}{
+		$svg: map-get( $collection, $name);
+		--url: url("data:image/svg+xml,#{$svg}");
+		mask-image: var(--url);
+		-webkit-mask-image: var(--url);
+	}
+}
