@@ -6,20 +6,11 @@ Mix and match SVG icons from among 87,534 icons and 93 icon packages.
 
 ### Features
 
-**Include only the icons you need**
-* Faster Page Loading
-* Custom icon bundles mean smaller transfer sizes
-
-**Use icons from multiple packages**
-* Adding icons from another icon package doesn't require including entire packages
-
-**SVG in CSS**
-* Eliminating font files means fewer server requests
-* Seamless integration with SCSS workflow
-
-**No font files**
-* Fewer server requests
-* Eliminates "Ensure text remains visible during webfont load" warning on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- **Include only the icons you need** <br/>Custom icon bundles means smaller transfer sizes and faster page loading
+- **Use icons from multiple packages** <br/>Adding icons from another icon package doesn't require including entire packages
+- **SVG in CSS** <br/>Eliminating font files means fewer server requests and faster page loading
+- **No font files** <br/>One less server request before your pages load and eliminates "Ensure text remains visible during webfont load" warning on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- **Seamless integration with SCSS workflow** <br/>No additional software to install or configure
 
 
 ### Usage
