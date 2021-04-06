@@ -2,7 +2,7 @@
 
 @mixin icon( $collection, $name ){
 
-	.#{$cssvg_prefix}-#{$name}{
+	.#{$blender_prefix}-#{$name}{
 		$svg: map-get( $collection, $name);
 		$svg: url("data:image/svg+xml,#{$svg}");
 		$svg: escape-svg($svg);

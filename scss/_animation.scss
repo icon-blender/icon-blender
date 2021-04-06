@@ -1,8 +1,8 @@
 
-.#{$cssvg_prefix}-spin {
+.#{$blender_prefix}-spin {
   animation: cs-spin 2s infinite linear;
 }
-.#{$cssvg_prefix}-pulse {
+.#{$blender_prefix}-pulse {
   animation: cs-spin 1s infinite steps(8);
 }
 

@@ -1,12 +1,12 @@
 
-.#{$cssvg_prefix}-embed{
+.#{$blender_prefix}-embed{
 	display:inline-block;
 	height:1em;
 	width:1em;
 }
 
 
-.#{$cssvg_prefix}{
+.#{$blender_prefix}{
 	display:inline-block;
 	height:1em;
 	width:1em;
@@ -18,50 +18,50 @@
 	-webkit-mask-position: center;
 }
 
-.#{$cssvg_prefix}-fw{
+.#{$blender_prefix}-fw{
 	width: 1.28571429em;
 }
 
 
-.#{$cssvg_prefix}-lg{
+.#{$blender_prefix}-lg{
 	height:1.33333333em;
 	width:1.33333333em;
 	line-height: 0.75em;
 	vertical-align: -15%;
 }
 
-.#{$cssvg_prefix}-2x{
+.#{$blender_prefix}-2x{
 	font-size:2em;
 }
 
-.#{$cssvg_prefix}-3x{
+.#{$blender_prefix}-3x{
 	font-size:3em;
 }
 
-.#{$cssvg_prefix}-4x{
+.#{$blender_prefix}-4x{
 	font-size:4em;
 }
 
-.#{$cssvg_prefix}-5x{
+.#{$blender_prefix}-5x{
 	font-size:5em;
 }
 
-.#{$cssvg_prefix}-flip-horizontal{
+.#{$blender_prefix}-flip-horizontal{
 	transform: scale(-1, 1);
 }
 
-.#{$cssvg_prefix}-flip-vertical{
+.#{$blender_prefix}-flip-vertical{
 	transform: scale(1, -1);
 }
 
-.#{$cssvg_prefix}-rotate-90 {
+.#{$blender_prefix}-rotate-90 {
     transform: rotate(90deg);
 }
 
-.#{$cssvg_prefix}-rotate-180 {
+.#{$blender_prefix}-rotate-180 {
     transform: rotate(180deg);
 }
 
-.#{$cssvg_prefix}-rotate-2700 {
+.#{$blender_prefix}-rotate-2700 {
     transform: rotate(270deg);
 }
