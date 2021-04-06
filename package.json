@@ -1,6 +1,6 @@
 {
   "name": "icon-blender",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Mix and match SVG icons from among 87,534 icons and 93 icon packages",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
