@@ -1,6 +1,6 @@
 
 
-@mixin csvgIcon( $collection, $name ){
+@mixin icon( $collection, $name ){
 
 	.#{$cssvg_prefix}-#{$name}{
 		$svg: map-get( $collection, $name);

@@ -1,5 +1,5 @@
 {
-  "name": "csvg-icons",
+  "name": "icon-blender",
   "version": "1.0.0-alpha.1",
   "description": "Mix and match SVG icons from among 87,534 icons and 93 icon packages",
   "scripts": {
@@ -16,11 +16,15 @@
   ],
   "author": "",
   "license": "TBD",
-  "sass": "scss/csvg.scss",
+  "sass": "scss/icon-blender.scss",
   "dependencies": {},
   "devDependencies": {
     "@iconify/json": "^1.1.325",
     "@iconify/json-tools": "^1.0.10",
     "lodash": "^4.17.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icon-blender/icon-blender.git"
+  },
 }

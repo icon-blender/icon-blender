@@ -1,5 +1,5 @@
 
-# CSVG Icons
+# Icon Blender
 
 Mix and match SVG icons from among 87,534 icons and 93 icon packages.
 
@@ -18,9 +18,9 @@ Mix and match SVG icons from among 87,534 icons and 93 icon packages.
 example.scss
 ```scss
 // $cssvg_prefix: 'cs'; // optionally define the class prefix. defaults to 'cs'
-@import "csvg-icons/csvg.scss"; // import default variables, mixins and core styles
-@import "csvg-icons/icons/fa.scss"; // import the FontAwesome4 collection
-@include csvgIcon($icons-fa,'search'); // include the 'search' icon from the FontAwesome4 collection
+@import "icon-blender/icon-blender.scss"; // import default variables, mixins and core styles
+@import "icon-blender/icons/fa.scss"; // import the FontAwesome4 collection
+@include icon($icons-fa,'search'); // include the 'search' icon from the FontAwesome4 collection
 ```
 
 example.html
@@ -31,7 +31,7 @@ example.html
 ## Styling
 
 Normally, you can't apply custom styles to embedded SVG images.
-CSVG gets around this limitation by embedding SVG images with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">mask-image</a>.
+Icon Blender gets around this limitation by embedding SVG images with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">mask-image</a>.
 With this approach, you can apply color, color gradients and other custom styling to CSV images via the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">background</a> property.
 
 ```html
