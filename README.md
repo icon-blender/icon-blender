@@ -8,8 +8,8 @@ Mix and match SVG icons from among 87,534 icons and 93 icon packages.
 
 - **Include only the icons you need** <br/>Custom icon bundles means smaller transfer sizes and faster page loading
 - **Use icons from multiple packages** <br/>Adding icons from another icon package doesn't require including entire packages
-- **SVG in CSS** <br/>Eliminating font files means fewer server requests and faster page loading
-- **No font files** <br/>One less server request before your pages load and eliminates "Ensure text remains visible during webfont load" warning on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- **SVG in CSS** <br/>Icons vectors are embedded directly in your CSS files elimnating the need for additional font files
+- **No font files** <br/>Eliminating font files means one less server request before your pages load and solves the "Ensure text remains visible during webfont load" issue on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - **Seamless integration with SCSS workflow** <br/>No additional software to install or configure
 
 
@@ -34,8 +34,15 @@ Normally, you can't apply custom styles to embedded SVG images.
 Icon Blender gets around this limitation by embedding SVG images with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">mask-image</a>.
 With this approach, you can apply color, color gradients and other custom styling to CSV images via the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">background</a> property.
 
+
+By default icons inherit the current text color
 ```html
-<i class="cs-search" style="background:blue"></i>
+<i class="cs-search" style="color:red"></i>
+```
+
+Icons can be customized further with the background property
+```html
+<i class="cs-search" style="background: linear-gradient(#e66465, #9198e5);"></i>
 ```
 
 ## Available Icon Packages
