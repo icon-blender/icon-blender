@@ -18,8 +18,8 @@ Mix and match SVG icons from among 87,534 icons and 93 icon packages.
 example.scss
 ```scss
 // $blender_prefix: 'ib'; // optionally define the class prefix. defaults to 'ib'
-@import "icon-blender/icon-blender.scss"; // import default variables, mixins and core styles
-@import "icon-blender/icons/fa.scss"; // import the FontAwesome4 collection ($icons-fa)
+@import "icon-blender/scss/icon-blender.scss"; // import default variables, mixins and core styles
+@import "icon-blender/scss/icons/fa.scss"; // import the FontAwesome4 collection ($icons-fa)
 @include icon($icons-fa,'search'); // include the 'search' icon from the FontAwesome4 collection
 ```
 
