@@ -48,11 +48,16 @@ function CreateCollectionSCSS( collection_key ){
 	var json			= {};
 	var html			= '<style>svg{height:1em}</style>';
 	json[var_name]		= {};
+	json[var_name]['__prefix'] = collection_key;
 
 	let collection = new Collection();
 
 	collection.loadIconifyCollection(collection_key);
 	collection.listIcons(true).forEach(icon => {
+
+		if( icon == '__prefix' ){
+			throw `icon with name '__prefix' found in collection ${collection_key}`;
+		}
 
 		total_gross++;
 
