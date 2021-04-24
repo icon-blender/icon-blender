@@ -2,7 +2,7 @@
 
 @mixin icon( $collection, $name ){
 
-	$collection_prefix = map-get( $collection, '__prefix');
+	$collection_prefix: map-get( $collection, '__prefix');
 
 	.#{$blender_prefix}-#{$collection_prefix}-#{$name}{
 		$svg: map-get( $collection, $name);
