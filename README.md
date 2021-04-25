@@ -16,7 +16,6 @@ Create customized SVG icon collections from over 80,000 free and open-source ico
 
 example.scss
 ```scss
-// $blender_prefix: 'ib'; // optionally define the class prefix. defaults to 'ib'
 @import "icon-blender/scss/icon-blender.scss"; // import default variables, mixins and core styles
 @import "icon-blender/scss/icons/fa.scss"; // import the FontAwesome4 collection ($icons-fa)
 @include icon($icons-fa,'search'); // include the 'search' icon from the FontAwesome4 collection
@@ -42,6 +41,20 @@ By default icons inherit the current text color
 Icons can be customized further with the background property
 ```html
 <i class="ib ib-fa-search" style="background: linear-gradient(#e66465, #9198e5);"></i>
+```
+
+## Custom Class Names
+
+When using the ```icon()``` mixin, generated class names will take the form ```.#{$blender_prefix}-#{$collection_prefix}-#{$icon_name}```.
+If you'd prefer alternate class names, you can use the ```iconUrl()``` mixin instead.
+
+```scss
+@import "icon-blender/scss/icon-blender.scss"; // import default variables, mixins and core styles
+@import "icon-blender/scss/icons/fa.scss"; // import the FontAwesome4 collection ($icons-fa)
+
+.my-class-name{
+	@include iconUrl($icons-fa,'search');
+}
 ```
 
 ## Available Icon Packages
