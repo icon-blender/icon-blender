@@ -1,5 +1,4 @@
 
-
 @mixin icon( $collection, $name ){
 
 	$collection_prefix: map-get( $collection, '__prefix');
@@ -9,8 +8,6 @@
 		$svg: url("data:image/svg+xml,#{$svg}");
 		$svg: escape-svg($svg);
 		--url: #{$svg};
-		mask-image: var(--url);
-		-webkit-mask-image: var(--url);
 	}
 }
 

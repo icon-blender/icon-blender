@@ -12,10 +12,13 @@
 	width:1em;
 	background: currentColor;
 	vertical-align: -.125em;
+	mask-image: var(--url);
 	mask-repeat: no-repeat;
 	mask-position: center;
+	-webkit-mask-image: var(--url);
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
+
 }
 
 .#{$blender_prefix}-fw{
