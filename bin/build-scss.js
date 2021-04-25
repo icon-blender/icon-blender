@@ -6,7 +6,7 @@
 const fs			= require('fs');
 const path			= require('path');
 const process		= require('process');
-const objToSCSS		= require('../lib/obj-to-scss');
+const objToSCSS		= require('./obj-to-scss');
 const collections	= require('@iconify/json').collections();
 const crypto		= require('crypto');
 
