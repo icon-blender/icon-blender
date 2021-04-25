@@ -1,13 +1,17 @@
 
+@mixin iconUrl($collection,$name){
+	$svg: map-get( $collection, $name);
+	$svg: url("data:image/svg+xml,#{$svg}");
+	$svg: escape-svg($svg);
+	--url: #{$svg};
+}
+
 @mixin icon( $collection, $name ){
 
 	$collection_prefix: map-get( $collection, '__prefix');
 
 	.#{$blender_prefix}-#{$collection_prefix}-#{$name}{
-		$svg: map-get( $collection, $name);
-		$svg: url("data:image/svg+xml,#{$svg}");
-		$svg: escape-svg($svg);
-		--url: #{$svg};
+		@include iconUrl($collection, $name);
 	}
 }
 

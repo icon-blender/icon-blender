@@ -4,7 +4,7 @@
   "description": "Create customized SVG icon collections from over 80,000 free and open-source icons",
   "homepage": "https://icon-blender.com/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --env=node",
     "build:scss": "node bin/build-scss.js"
   },
   "keywords": [
@@ -15,14 +15,16 @@
     "fontawesome",
     "bootstrap"
   ],
-  "author": "",
+  "author": "Josh Schmidt (https://github.com/oyejorge)",
   "license": "TBD",
   "sass": "scss/icon-blender.scss",
   "dependencies": {},
   "devDependencies": {
     "@iconify/json": "^1.1.325",
     "@iconify/json-tools": "^1.0.10",
-    "lodash": "^4.17.21"
+    "jest": "^26.6.3",
+    "sass": "^1.32.11",
+    "sass-true": "^6.0.1"
   },
   "repository": {
     "type": "git",
