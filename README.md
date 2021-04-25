@@ -3,6 +3,9 @@
 
 Create customized SVG icon collections from over 80,000 free and open-source icons
 
+![Test Results](https://github.com/icon-blender/icon-blender/actions/workflows/tests.yaml/badge.svg)
+
+
 ## Features
 
 - **Include only the icons you need** <br/>Custom icon bundles means smaller transfer sizes and faster page loading
