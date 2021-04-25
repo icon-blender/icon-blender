@@ -1,8 +1,13 @@
-name: [push,pull-request]
+name: tests
 
 on:
+  push:
+    branches: [ main ]
+
+on: 
   pull_request:
     branches: [ main ]
+
 
 jobs:
   build:
