@@ -1,8 +1,7 @@
 
 # Icon Blender
 
-Mix and match SVG icons from among 87,534 icons and 93 icon packages.
-
+Create customized SVG icon collections from over 80,000 free and open-source icons
 
 ## Features
 
@@ -25,7 +24,7 @@ example.scss
 
 example.html
 ```html
-<i class="ib ib-search"></i>
+<i class="ib ib-fa-search"></i>
 ```
 
 ## Styling
@@ -37,12 +36,12 @@ With this approach, you can apply color, color gradients and other custom stylin
 
 By default icons inherit the current text color
 ```html
-<i class="ib ib-search" style="color:red"></i>
+<i class="ib ib-fa-search" style="color:red"></i>
 ```
 
 Icons can be customized further with the background property
 ```html
-<i class="ib ib-search" style="background: linear-gradient(#e66465, #9198e5);"></i>
+<i class="ib ib-fa-search" style="background: linear-gradient(#e66465, #9198e5);"></i>
 ```
 
 ## Available Icon Packages
