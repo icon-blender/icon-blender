@@ -40,7 +40,7 @@ class SimpleSVG extends SVG{
 }
 
 
-function CreateCollectionSCSS( collection_key ){
+function CreateCollectionSCSS( collection_key, collection_meta ){
 
 	const scss_path		= path.resolve( process.cwd(),'scss','icons',collection_key+'.scss');
 	const html_path		= path.resolve( process.cwd(),'html',collection_key+'.html');
@@ -48,9 +48,7 @@ function CreateCollectionSCSS( collection_key ){
 	var json			= {};
 	var html			= '<style>svg{height:1em}</style>';
 	json[var_name]		= {};
-	json[var_name]['__prefix'] = collection_key;
-
-	let collection = new Collection();
+	let collection		= new Collection();
 
 	collection.loadIconifyCollection(collection_key);
 	collection.listIcons(true).forEach(icon => {
@@ -103,9 +101,13 @@ function CreateCollectionSCSS( collection_key ){
 		html					+= '</div>';
 	});
 
-	var scss = objToSCSS(json);
+	readme_list[collection_key]		= `<tr><td><a href="${collection_meta.url}">${collection_meta.name}</a></td><td>${collection_key}</td><td>${Object.keys(json[var_name]).length}</td></tr>`;
+
+	json[var_name]['__prefix']		= collection_key;
+	var scss 						= objToSCSS(json);
+
 	fs.writeFileSync(scss_path, scss);
-	fs.writeFileSync(html_path, html);
+	//fs.writeFileSync(html_path, html);
 }
 
 
@@ -114,10 +116,9 @@ console.log('Building icon scss from @iconify/json');
 for(const collection_key in collections){
 
 	total_collections++;
-	let collection					= collections[collection_key];
-	readme_list[collection_key]		= '<li><a href="'+ collection.url+'">'+collection.name +'</a> ('+collection_key+')</li>';
+	let collection_meta					= collections[collection_key];
 
-	CreateCollectionSCSS(collection_key);
+	CreateCollectionSCSS(collection_key,collection_meta);
 }
 
 
@@ -134,4 +135,8 @@ console.log('Complete. ' + total_icons + ' icons in ' + total_collections + ' ic
 console.log('Total gross', total_gross,'Duplicates',duplicates);
 
 
-//console.log('README list',Object.values(readme_list).join("\n"));
+var readme_content = `<table><tr><th>Package Name</th><th>Prefix</th><th>Icons</th></tr>
+${Object.values(readme_list).join("\n")}
+</table>`;
+
+//console.log('README list',readme_content);
