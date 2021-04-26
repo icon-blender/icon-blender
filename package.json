@@ -19,6 +19,7 @@
   "author": "Josh Schmidt (https://github.com/oyejorge)",
   "license": "TBD",
   "sass": "scss/icon-blender.scss",
+  "style": "css/icon-blender.css",
   "dependencies": {},
   "devDependencies": {
     "@iconify/json": "^1.1.325",
