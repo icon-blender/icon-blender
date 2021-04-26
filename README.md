@@ -163,3 +163,27 @@ Icon definitions from [Iconfy](https://github.com/iconify/collections-json)
 <tr><td><a href="https://github.com/zavoloklom/material-design-iconic-font">Material Design Iconic Font</a></td><td>zmdi</td><td>886</td></tr>
 <tr><td><a href="https://github.com/dukestreetstudio/zondicons">Zondicons</a></td><td>zondicons</td><td>297</td></tr>
 </table>
+
+
+## Contributing
+
+Install the dependencies that are required to build and test:
+
+```sh
+$ npm install
+```
+
+Run tests
+```sh
+$ npm test
+```
+
+Build icon/*.scss files from json
+```sh
+$ npm run build:scss
+```
+
+Build css/icon-blender.css
+```sh
+$ npm run build:css
+```

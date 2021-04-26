@@ -15,10 +15,7 @@
 	}
 }
 
-/**
- * escape-svg() and str-replace() from https://github.com/twbs/bootstrap
- *
- */
+// escape-svg() and str-replace() from https://github.com/twbs/bootstrap
 
 // Characters which are escaped by the escape-svg function
 $escaped-characters: (

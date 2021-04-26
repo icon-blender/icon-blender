@@ -1,12 +1,12 @@
 
 .#{$blender_prefix}-spin {
-  animation: cs-spin 2s infinite linear;
+  animation: ib-spin 2s infinite linear;
 }
 .#{$blender_prefix}-pulse {
-  animation: cs-spin 1s infinite steps(8);
+  animation: ib-spin 1s infinite steps(8);
 }
 
-@keyframes cs-spin {
+@keyframes ib-spin {
   0% {
     transform: rotate(0deg);
   }

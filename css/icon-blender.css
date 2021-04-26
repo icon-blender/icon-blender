@@ -1,0 +1,83 @@
+.ib-embed {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+
+.ib {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background: currentColor;
+  vertical-align: -0.125em;
+  mask-image: var(--url);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: var(--url);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.ib-fw {
+  width: 1.28571429em;
+}
+
+.ib-lg {
+  height: 1.33333333em;
+  width: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.ib-2x {
+  font-size: 2em;
+}
+
+.ib-3x {
+  font-size: 3em;
+}
+
+.ib-4x {
+  font-size: 4em;
+}
+
+.ib-5x {
+  font-size: 5em;
+}
+
+.ib-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.ib-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.ib-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.ib-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.ib-rotate-2700 {
+  transform: rotate(270deg);
+}
+
+.ib-spin {
+  animation: ib-spin 2s infinite linear;
+}
+
+.ib-pulse {
+  animation: ib-spin 1s infinite steps(8);
+}
+
+@keyframes ib-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
