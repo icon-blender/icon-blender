@@ -17,6 +17,7 @@ Create customized SVG icon collections from over 80,000 free and open-source ico
 
 ## Usage
 
+### SCSS
 example.scss
 ```scss
 @import "icon-blender/scss/icon-blender.scss"; // import default variables, mixins and core styles
@@ -29,7 +30,10 @@ example.html
 <i class="ib ib-fa-search"></i>
 ```
 
-## Styling
+### CSS
+Not using SCSS? You can still use IconBlender by selecting icons and generating CSS on <a href="https://icon-blender.com">icon-blender.com</a>
+
+### Styling
 
 Normally, you can't apply custom styles to embedded SVG images.
 Icon Blender gets around this limitation by embedding SVG images with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">mask-image</a>.
@@ -46,7 +50,7 @@ Icons can be customized further with the background property
 <i class="ib ib-fa-search" style="background: linear-gradient(#e66465, #9198e5);"></i>
 ```
 
-## Custom Class Names
+### Custom Class Names
 
 When using the ```icon()``` mixin, generated class names will take the form ```.#{$blender_prefix}-#{$collection_prefix}-#{$icon_name}```.
 If you'd prefer alternate class names, you can use the ```iconUrl()``` mixin instead.
