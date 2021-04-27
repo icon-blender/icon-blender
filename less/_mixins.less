@@ -1,0 +1,17 @@
+
+#blender{
+	.iconUrl( @collection, @name ){
+		@svg: @collection[@@name];
+		@escaped: escape(@svg);
+		--url: url('data:image/svg+xml,@{escaped}');
+	}
+
+	.icon( @collection, @name ){
+
+		@collection_prefix: @collection[@__prefix];
+
+		.@{blender_prefix}-@{collection_prefix}-@{name}{
+			#blender.iconUrl(@collection, @name);
+		}
+	}
+}
