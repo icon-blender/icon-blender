@@ -9,8 +9,9 @@
 	.icon( @collection, @name ){
 
 		@collection_prefix: @collection[@__prefix];
+		@normalized: ~'@{collection_prefix}';
 
-		.@{blender_prefix}-@{collection_prefix}-@{name}{
+		.@{blender_prefix}-@{normalized}-@{name}{
 			#blender.iconUrl(@collection, @name);
 		}
 	}

@@ -5,7 +5,7 @@
   "homepage": "https://icon-blender.com/",
   "scripts": {
     "test": "jest --env=node",
-    "build:scss": "node bin/build-scss.js",
+    "build": "node bin/build.js",
     "build:css": "node bin/build-css.js"
   },
   "keywords": [
@@ -19,6 +19,7 @@
   "author": "Josh Schmidt (https://github.com/oyejorge)",
   "license": "TBD",
   "sass": "scss/icon-blender.scss",
+  "less": "less/icon-blender.less",
   "style": "css/icon-blender.css",
   "dependencies": {},
   "devDependencies": {

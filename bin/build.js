@@ -7,6 +7,7 @@ const fs			= require('fs');
 const path			= require('path');
 const process		= require('process');
 const objToSCSS		= require('./obj-to-scss');
+const objToLess		= require('./obj-to-less');
 const collections	= require('@iconify/json').collections();
 const crypto		= require('crypto');
 
@@ -43,6 +44,7 @@ class SimpleSVG extends SVG{
 function CreateCollectionSCSS( collection_key, collection_meta ){
 
 	const scss_path		= path.resolve( process.cwd(),'scss','icons',collection_key+'.scss');
+	const less_path		= path.resolve( process.cwd(),'less','icons',collection_key+'.less');
 	const html_path		= path.resolve( process.cwd(),'html',collection_key+'.html');
 	const var_name		= 'icons-'+collection_key;
 	var json			= {};
@@ -105,8 +107,10 @@ function CreateCollectionSCSS( collection_key, collection_meta ){
 
 	json[var_name]['__prefix']		= collection_key;
 	var scss 						= objToSCSS(json);
+	var less						= objToLess(json);
 
 	fs.writeFileSync(scss_path, scss);
+	fs.writeFileSync(less_path, less);
 	//fs.writeFileSync(html_path, html);
 }
 

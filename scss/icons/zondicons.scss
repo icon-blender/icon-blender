@@ -1,5 +1,4 @@
 $icons-zondicons: (
-	'__prefix': "zondicons",
 	'add-outline': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M11 9h4v2h-4v4H9v-4H5V9h4V5h2v4zm-1 11a10 10 0 1 1 0-20a10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16z\" fill=\"currentColor\"/></svg>",
 	'add-solid': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M11 9V5H9v4H5v2h4v4h2v-4h4V9h-4zm-1 11a10 10 0 1 1 0-20a10 10 0 0 1 0 20z\" fill=\"currentColor\"/></svg>",
 	'adjust': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M10 2v16a8 8 0 1 0 0-16zm0 18a10 10 0 1 1 0-20a10 10 0 0 1 0 20z\" fill=\"currentColor\"/></svg>",
@@ -296,5 +295,6 @@ $icons-zondicons: (
 	'wrench': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M6.47 9.8A5 5 0 0 1 .2 3.22l3.95 3.95l2.82-2.83L3.03.41a5 5 0 0 1 6.4 6.68l10 10l-2.83 2.83L6.47 9.8z\" fill=\"currentColor\"/></svg>",
 	'yin-yang': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path fill-rule=\"evenodd\" d=\"M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20zm0-18a8 8 0 1 0 0 16a4 4 0 1 1 0-8a4 4 0 1 0 0-8zm0 13a1 1 0 1 0 0-2a1 1 0 0 0 0 2zm0-8a1 1 0 1 1 0-2a1 1 0 0 1 0 2z\" fill=\"currentColor\"/></svg>",
 	'zoom-in': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path fill-rule=\"evenodd\" d=\"M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zM7 7V5h2v2h2v2H9v2H7V9H5V7h2z\" fill=\"currentColor\"/></svg>",
-	'zoom-out': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path fill-rule=\"evenodd\" d=\"M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zM5 7h6v2H5V7z\" fill=\"currentColor\"/></svg>"
+	'zoom-out': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path fill-rule=\"evenodd\" d=\"M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zM5 7h6v2H5V7z\" fill=\"currentColor\"/></svg>",
+	'__prefix': "zondicons"
 );

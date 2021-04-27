@@ -1,5 +1,4 @@
 $icons-dashicons: (
-	'__prefix': "dashicons",
 	'admin-appearance': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M14.48 11.06L7.41 3.99l1.5-1.5c.5-.56 2.3-.47 3.51.32c1.21.8 1.43 1.28 2.91 2.1c1.18.64 2.45 1.26 4.45.85zm-.71.71L6.7 4.7L4.93 6.47a.996.996 0 0 0 0 1.41l1.06 1.06c.39.39.39 1.03 0 1.42c-.6.6-1.43 1.11-2.21 1.69c-.35.26-.7.53-1.01.84C1.43 14.23.4 16.08 1.4 17.07c.99 1 2.84-.03 4.18-1.36c.31-.31.58-.66.85-1.02c.57-.78 1.08-1.61 1.69-2.21a.996.996 0 0 1 1.41 0l1.06 1.06c.39.39 1.02.39 1.41 0z\" fill=\"currentColor\"/></svg>",
 	'admin-collapse': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M10 2.16A7.84 7.84 0 1 1 2.16 10c0-4.33 3.55-7.84 7.84-7.84zm2 11.72V6.12L6.18 9.97z\" fill=\"currentColor\"/></svg>",
 	'admin-comments': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M5 2h9c1.1 0 2 .9 2 2v7c0 1.1-.9 2-2 2h-2l-5 5v-5H5c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2z\" fill=\"currentColor\"/></svg>",
@@ -346,5 +345,6 @@ $icons-dashicons: (
 	'yes-alt': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8zm-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94l-5.811 8.381z\" fill=\"currentColor\"/></svg>",
 	'youtube': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M17.7 5.3c-.2-.7-.7-1.2-1.4-1.4c-2.1-.2-4.2-.4-6.3-.3c-2.1 0-4.2.1-6.3.3c-.6.2-1.2.8-1.4 1.4a37.08 37.08 0 0 0 0 9.4c.2.7.7 1.2 1.4 1.4c2.1.2 4.2.4 6.3.3c2.1 0 4.2-.1 6.3-.3c.7-.2 1.2-.7 1.4-1.4a37.08 37.08 0 0 0 0-9.4zM8 13V7l5.2 3L8 13z\" fill=\"currentColor\"/></svg>",
 	'menu-alt-2': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M20 5V2H0v3h20zm0 6V8H0v3h20zm0 6v-3H0v3h20z\" fill=\"currentColor\"/></svg>",
-	'plus-light': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M17 9v2h-6v6H9v-6H3V9h6V3h2v6h6z\" fill=\"currentColor\"/></svg>"
+	'plus-light': "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 20 20\"><path d=\"M17 9v2h-6v6H9v-6H3V9h6V3h2v6h6z\" fill=\"currentColor\"/></svg>",
+	'__prefix': "dashicons"
 );
