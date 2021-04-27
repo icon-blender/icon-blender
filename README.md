@@ -10,7 +10,7 @@ Create customized SVG icon collections from over 80,000 free and open-source ico
 
 - **Include only the icons you need** <br/>Custom icon bundles means smaller transfer sizes and faster page loading
 - **Use icons from multiple packages** <br/>Adding icons from another icon package doesn't require including entire packages
-- **SVG in CSS** <br/>Icons vectors are embedded directly in your CSS files elimnating the need for additional font files
+- **SVG in CSS** <br/>Icons vectors are embedded directly in your CSS files eliminating the need for additional font files
 - **No font files** <br/>Eliminating font files means one less server request before your pages load and solves the "Ensure text remains visible during webfont load" issue on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - **Seamless integration with SCSS/Less.js workflow** <br/>No additional software to install or configure
 
@@ -68,6 +68,7 @@ Icons can be customized further with the background property
 When using the ```icon()``` mixin, generated class names will take the form ```.#{$blender_prefix}-#{$collection_prefix}-#{$icon_name}```.
 If you'd prefer alternate class names, you can use the ```iconUrl()``` mixin instead.
 
+example.scss
 ```scss
 @import "icon-blender/scss/icon-blender.scss"; // import default variables, mixins and core styles
 @import "icon-blender/scss/icons/fa.scss"; // import the FontAwesome4 collection ($icons-fa)
@@ -76,6 +77,17 @@ If you'd prefer alternate class names, you can use the ```iconUrl()``` mixin ins
 	@include iconUrl($icons-fa,'search');
 }
 ```
+
+example.less
+```less
+@import "icon-blender/less/icon-blender.less"; // import default variables, mixins and core styles
+@import "icon-blender/less/icons/fa.less"; // import the FontAwesome4 collection ($icons-fa)
+
+.my-class-name{
+	#blender.iconUrl(@icons-fa,search);
+}
+```
+
 
 ## Available Icon Packages
 
