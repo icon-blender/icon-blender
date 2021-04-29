@@ -63,11 +63,11 @@ function CreateCollectionSCSS( collection_key, collection_meta ){
 
 		const svg_data			= collection.getIconData(icon);
 		const svg				= new SimpleSVG(svg_data);
-		const markup			= svg.getSVG();
+		const markup			= svg.getSVG().replace('xmlns:xlink="http://www.w3.org/1999/xlink" ','');
 		const hash				= crypto.createHash('sha256').update(markup).digest('base64');
 
 		const orig_svg			= new SVG(svg_data);
-		const orig_mark			= orig_svg.getSVG();
+		const orig_mark			= orig_svg.getSVG().replace('xmlns:xlink="http://www.w3.org/1999/xlink" ','');
 		const orig_hash			= crypto.createHash('sha256').update(orig_mark).digest('base64');
 
 
