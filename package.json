@@ -5,8 +5,8 @@
   "homepage": "https://icon-blender.com/",
   "scripts": {
     "test": "jest --env=node",
-    "build": "node bin/build.js",
-    "build:css": "node bin/build-css.js"
+    "build": "node lib/build.js",
+    "build:css": "node lib/build-css.js"
   },
   "keywords": [
     "SVG",
