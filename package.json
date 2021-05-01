@@ -2,7 +2,7 @@
   "name": "icon-blender",
   "version": "1.0.0-beta.2",
   "description": "Create customized SVG icon collections from over 80,000 free and open-source icons",
-  "homepage": "https://icon-blender.com/",
+  "homepage": "https://icon-blender.com",
   "scripts": {
     "test": "jest --env=node",
     "build": "node lib/build.js",
