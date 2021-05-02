@@ -21,6 +21,7 @@
   "sass": "scss/icon-blender.scss",
   "less": "less/icon-blender.less",
   "style": "css/icon-blender.css",
+  "main": "lib/modules.js",
   "dependencies": {},
   "devDependencies": {
     "@iconify/json": "^1.1.325",
