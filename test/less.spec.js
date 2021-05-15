@@ -25,7 +25,7 @@ describe('Less',()=>{
 }`;
 
 		renderFile(less_file,(err,output)=>{
-			expect(expected).toBe(output.css.trim());
+			expect(output.css.trim()).toBe(expected);
 			done();
 
 		});
@@ -41,11 +41,28 @@ describe('Less',()=>{
 }`;
 
 		renderFile(less_file,(err,output)=>{
-			expect(expected).toBe(output.css.trim());
+			expect(output.css.trim()).toBe(expected);
 			done();
 
 		});
 
 	});
+
+
+	test('ib_stroke_width',(done)=>{
+
+		const less_file		= path.resolve(process.cwd(), 'test/iconStrokeWidth.less');
+		var expected		= `.test {
+  --url: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2012h4l3%208l4-16l3%208h4%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E');
+}`;
+
+		renderFile(less_file,(err,output)=>{
+			expect(output.css.trim()).toBe(expected);
+			done();
+
+		});
+
+	});
+
 
 });

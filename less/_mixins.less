@@ -2,8 +2,11 @@
 #blender{
 	.iconUrl( @collection, @name ){
 		@svg: @collection[@@name];
-		@escaped: escape(@svg);
-		--url: url('data:image/svg+xml,@{escaped}');
+
+		@svg1: if( @ib_stroke_width = auto, @svg, replace(@svg,'stroke-width="[^"]*"','stroke-width="@{ib_stroke_width}"') );
+
+		@svg2: escape(@svg1);
+		--url: url('data:image/svg+xml,@{svg2}');
 	}
 
 	.icon( @collection, @name ){
