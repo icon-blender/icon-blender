@@ -1,8 +1,8 @@
 
-.#{$blender_prefix}-spin::before {
+.#{$ib_prefix}-spin::before {
   animation: ib-spin 2s infinite linear;
 }
-.#{$blender_prefix}-pulse::before {
+.#{$ib_prefix}-pulse::before {
   animation: ib-spin 1s infinite steps(8);
 }
 

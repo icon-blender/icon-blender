@@ -10,7 +10,7 @@
 
 	$collection_prefix: map-get( $collection, '__prefix');
 
-	.#{$blender_prefix}-#{$collection_prefix}-#{$name}{
+	.#{$ib_prefix}-#{$collection_prefix}-#{$name}{
 		@include iconUrl($collection, $name);
 	}
 }

@@ -1,7 +1,7 @@
 
 
 
-.#{$blender_prefix}::before {
+.#{$ib_prefix}::before {
 	display:inline-block;
 	height:1em;
 	width:1em;
@@ -16,57 +16,57 @@
 	content:'';
 }
 
-.#{$blender_prefix}-fw::before {
+.#{$ib_prefix}-fw::before {
 	width: 1.28571429em;
 }
 
-.#{$blender_prefix}-sm {
+.#{$ib_prefix}-sm {
 	font-size:.875em;
 }
 
-.#{$blender_prefix}-lg {
+.#{$ib_prefix}-lg {
 	font-size: 1.33333333em;
 	line-height: 0.75em;
 	vertical-align: -.0667em;
 }
 
-.#{$blender_prefix}-2x {
+.#{$ib_prefix}-2x {
 	font-size:2em;
 }
 
-.#{$blender_prefix}-3x {
+.#{$ib_prefix}-3x {
 	font-size:3em;
 }
 
-.#{$blender_prefix}-4x {
+.#{$ib_prefix}-4x {
 	font-size:4em;
 }
 
-.#{$blender_prefix}-5x {
+.#{$ib_prefix}-5x {
 	font-size:5em;
 }
 
-.#{$blender_prefix}-flip-horizontal::before {
+.#{$ib_prefix}-flip-horizontal::before {
 	transform: scale(-1, 1);
 }
 
-.#{$blender_prefix}-flip-vertical::before {
+.#{$ib_prefix}-flip-vertical::before {
 	transform: scale(1, -1);
 }
 
-.#{$blender_prefix}-rotate-90::before {
+.#{$ib_prefix}-rotate-90::before {
     transform: rotate(90deg);
 }
 
-.#{$blender_prefix}-rotate-180::before {
+.#{$ib_prefix}-rotate-180::before {
     transform: rotate(180deg);
 }
 
-.#{$blender_prefix}-rotate-270::before {
+.#{$ib_prefix}-rotate-270::before {
     transform: rotate(270deg);
 }
 
-.#{$blender_prefix}-embed{
+.#{$ib_prefix}-embed{
 	display:inline-block;
 	height:1em;
 	width:1em;
