@@ -1,6 +1,9 @@
 
 @mixin iconUrl($collection,$name){
 	$svg: map-get( $collection, $name);
+	@if $ib_stroke_width != auto {
+		$svg: stroke-width($svg,$ib_stroke_width);
+	}
 	$svg: url("data:image/svg+xml,#{$svg}");
 	$svg: escape-svg($svg);
 	--url: #{$svg};
@@ -62,4 +65,19 @@ $escaped-characters: (
   }
 
   @return $string;
+}
+
+// Change the stroke-width property of the svg
+@function stroke-width($svg, $stroke_width ) {
+	$index: str-index($svg, 'stroke-width=');
+
+	@if $index {
+		$new:		str-slice($svg, 0, $index+13 );
+		$svg:		str-slice($svg, $index+14 );
+		$index:		str-index($svg,'"');
+
+		@return $new + $stroke_width + str_slice($svg,$index);
+	}
+
+	@return $svg;
 }
