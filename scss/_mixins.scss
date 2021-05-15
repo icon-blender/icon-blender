@@ -1,8 +1,8 @@
 
 @mixin iconUrl($collection,$name){
 	$svg: map-get( $collection, $name);
-	@if $ib_stroke_width != auto {
-		$svg: stroke-width($svg,$ib_stroke_width);
+	@if $ib-stroke-width != auto {
+		$svg: stroke-width($svg,$ib-stroke-width);
 	}
 	$svg: url("data:image/svg+xml,#{$svg}");
 	$svg: escape-svg($svg);
@@ -13,7 +13,7 @@
 
 	$collection_prefix: map-get( $collection, '__prefix');
 
-	.#{$ib_prefix}-#{$collection_prefix}-#{$name}{
+	.#{$ib-prefix}-#{$collection_prefix}-#{$name}{
 		@include iconUrl($collection, $name);
 	}
 }

@@ -3,7 +3,7 @@
 	.iconUrl( @collection, @name ){
 		@svg: @collection[@@name];
 
-		@svg1: if( @ib_stroke_width = auto, @svg, replace(@svg,'stroke-width="[^"]*"','stroke-width="@{ib_stroke_width}"') );
+		@svg1: if( @ib-stroke-width = auto, @svg, replace(@svg,'stroke-width="[^"]*"','stroke-width="@{ib-stroke-width}"') );
 
 		@svg2: escape(@svg1);
 		--url: url('data:image/svg+xml,@{svg2}');
@@ -14,7 +14,7 @@
 		@collection_prefix: @collection[@__prefix];
 		@normalized: ~'@{collection_prefix}';
 
-		.@{ib_prefix}-@{normalized}-@{name}{
+		.@{ib-prefix}-@{normalized}-@{name}{
 			#blender.iconUrl(@collection, @name);
 		}
 	}

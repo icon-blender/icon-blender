@@ -49,7 +49,7 @@ describe('Less',()=>{
 	});
 
 
-	test('ib_stroke_width',(done)=>{
+	test('ib-stroke-width',(done)=>{
 
 		const less_file		= path.resolve(process.cwd(), 'test/iconStrokeWidth.less');
 		var expected		= `.test {

@@ -53,7 +53,7 @@ IconBlender comes with standard scale (ib-2x..), rotate (ib-rotate-90..., flip (
 
 ### Custom Class Names
 
-When using the ```icon()``` mixin, generated class names will take the form ```.#{$ib_prefix}-#{$collection_prefix}-#{$icon_name}```.
+When using the ```icon()``` mixin, generated class names will take the form ```.#{$ib-prefix}-#{$collection-prefix}-#{$icon-name}```.
 If you'd prefer alternate class names, you can use the ```iconUrl()``` mixin instead.
 
 example.scss

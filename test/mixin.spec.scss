@@ -6,7 +6,7 @@
 @import '../scss/icons/fa';
 @import '../scss/icons/tabler';
 
-$ib_stroke_width: 3;
+$ib-stroke-width: 3;
 
 
 @include describe('mixins') {
@@ -41,7 +41,7 @@ $ib_stroke_width: 3;
 		}
 	}
 
-	@include it('@ib_stroke_width') {
+	@include it('@ib-stroke-width') {
 		@include assert {
 			@include output {
 				@include iconUrl($icons-tabler, 'activity');
