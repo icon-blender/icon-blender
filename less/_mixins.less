@@ -5,8 +5,14 @@
 
 		@svg1: if( @ib-stroke-width = auto, @svg, replace(@svg,'stroke-width="[^"]*"','stroke-width="@{ib-stroke-width}"') );
 
-		@svg2: escape(@svg1);
-		--url: url('data:image/svg+xml,@{svg2}');
+		@svg2: replace(@svg1, "<", "%3c",g);
+		@svg3: replace(@svg2, ">", "%3e",g);
+		@svg4: replace(@svg3, "#", "%23",g);
+		@svg5: replace(@svg4, "\(", "%28",g);
+		@svg6: replace(@svg5, "\(", "%29",g);
+
+		//@svg1: escape(@svg);
+		--url: url('data:image/svg+xml,@{svg6}');
 	}
 
 	.icon( @collection, @name ){

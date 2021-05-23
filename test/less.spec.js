@@ -21,7 +21,7 @@ describe('Less',()=>{
 
 		const less_file		= path.resolve(process.cwd(), 'test/iconUrl.less');
 		var expected		= `.test {
-  --url: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201792%201408%22%3E%3Cpath%20d%3D%22M1792%201216v128q0%2026-19%2045t-45%2019H64q-26%200-45-19t-19-45v-128q0-26%2019-45t45-19h1664q26%200%2045%2019t19%2045zm-384-384v128q0%2026-19%2045t-45%2019H64q-26%200-45-19T0%20960V832q0-26%2019-45t45-19h1280q26%200%2045%2019t19%2045zm256-384v128q0%2026-19%2045t-45%2019H64q-26%200-45-19T0%20576V448q0-26%2019-45t45-19h1536q26%200%2045%2019t19%2045zM1280%2064v128q0%2026-19%2045t-45%2019H64q-26%200-45-19T0%20192V64q0-26%2019-45T64%200h1152q26%200%2045%2019t19%2045z%22%20fill%3D%22currentColor%22/%3E%3C/svg%3E');
+  --url: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1408"%3e%3cpath d="M1792 1216v128q0 26-19 45t-45 19H64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1664q26 0 45 19t19 45zm-384-384v128q0 26-19 45t-45 19H64q-26 0-45-19T0 960V832q0-26 19-45t45-19h1280q26 0 45 19t19 45zm256-384v128q0 26-19 45t-45 19H64q-26 0-45-19T0 576V448q0-26 19-45t45-19h1536q26 0 45 19t19 45zM1280 64v128q0 26-19 45t-45 19H64q-26 0-45-19T0 192V64q0-26 19-45T64 0h1152q26 0 45 19t19 45z" fill="currentColor"/%3e%3c/svg%3e');
 }`;
 
 		renderFile(less_file,(err,output)=>{
@@ -37,7 +37,7 @@ describe('Less',()=>{
 
 		const less_file		= path.resolve(process.cwd(), 'test/icon.less');
 		var expected		= `.ib-fa-align-left {
-  --url: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201792%201408%22%3E%3Cpath%20d%3D%22M1792%201216v128q0%2026-19%2045t-45%2019H64q-26%200-45-19t-19-45v-128q0-26%2019-45t45-19h1664q26%200%2045%2019t19%2045zm-384-384v128q0%2026-19%2045t-45%2019H64q-26%200-45-19T0%20960V832q0-26%2019-45t45-19h1280q26%200%2045%2019t19%2045zm256-384v128q0%2026-19%2045t-45%2019H64q-26%200-45-19T0%20576V448q0-26%2019-45t45-19h1536q26%200%2045%2019t19%2045zM1280%2064v128q0%2026-19%2045t-45%2019H64q-26%200-45-19T0%20192V64q0-26%2019-45T64%200h1152q26%200%2045%2019t19%2045z%22%20fill%3D%22currentColor%22/%3E%3C/svg%3E');
+  --url: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1408"%3e%3cpath d="M1792 1216v128q0 26-19 45t-45 19H64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1664q26 0 45 19t19 45zm-384-384v128q0 26-19 45t-45 19H64q-26 0-45-19T0 960V832q0-26 19-45t45-19h1280q26 0 45 19t19 45zm256-384v128q0 26-19 45t-45 19H64q-26 0-45-19T0 576V448q0-26 19-45t45-19h1536q26 0 45 19t19 45zM1280 64v128q0 26-19 45t-45 19H64q-26 0-45-19T0 192V64q0-26 19-45T64 0h1152q26 0 45 19t19 45z" fill="currentColor"/%3e%3c/svg%3e');
 }`;
 
 		renderFile(less_file,(err,output)=>{
@@ -53,7 +53,7 @@ describe('Less',()=>{
 
 		const less_file		= path.resolve(process.cwd(), 'test/iconStrokeWidth.less');
 		var expected		= `.test {
-  --url: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2012h4l3%208l4-16l3%208h4%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E');
+  --url: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3e%3cpath d="M3 12h4l3 8l4-16l3 8h4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
 }`;
 
 		renderFile(less_file,(err,output)=>{
