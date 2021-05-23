@@ -35,7 +35,7 @@ example.less
 ```less
 @import "icon-blender/less/icon-blender.less"; // import default variables, mixins and core styles
 @import "icon-blender/less/icons/fa.less"; // import the FontAwesome4 collection ($icons-fa)
-#blender.icon(@icons-fa, search); // include the 'search' icon from the FontAwesome4 collection
+.ib.icon(@icons-fa, search); // include the 'search' icon from the FontAwesome4 collection
 ```
 
 example.html
@@ -72,7 +72,7 @@ example.less
 @import "icon-blender/less/icons/fa.less"; // import the FontAwesome4 collection ($icons-fa)
 
 .my-class-name{
-	#blender.iconUrl(@icons-fa,search);
+	.ib.iconUrl(@icons-fa,search);
 }
 ```
 
