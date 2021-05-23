@@ -1,16 +1,27 @@
-.ib::before {
+.ib::before,
+.ibc::before {
   display: inline-block;
   height: 1em;
   width: 1em;
-  background: currentColor;
   vertical-align: -0.125em;
+  content: "";
+}
+
+.ib::before {
+  background: currentColor;
   mask-image: var(--url);
   mask-repeat: no-repeat;
   mask-position: center;
   -webkit-mask-image: var(--url);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  content: "";
+}
+
+.ibc::before {
+  background-image: var(--url);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .ib-fw::before {

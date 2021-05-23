@@ -1,19 +1,29 @@
 
 
-
-.@{ib-prefix}::before{
+.@{ib-prefix}::before,
+.@{ib-prefix}c::before{
 	display:inline-block;
 	height:1em;
 	width:1em;
-	background: currentColor;
 	vertical-align: -.125em;
+	content:'';
+}
+
+.@{ib-prefix}::before{
+	background: currentColor;
 	mask-image: var(--url);
 	mask-repeat: no-repeat;
 	mask-position: center;
 	-webkit-mask-image: var(--url);
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
-	content:'';
+}
+
+.@{ib-prefix}c::before{
+	background-image: var(--url);
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat:no-repeat;
 }
 
 .@{ib-prefix}-fw::before{
