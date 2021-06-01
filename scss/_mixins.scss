@@ -13,7 +13,7 @@
 
 	$collection_prefix: map-get( $collection, '__prefix');
 
-	.#{$ib-prefix}-#{$collection_prefix}-#{$name}{
+	.#{$collection_prefix}-#{$name}{
 		@include iconUrl($collection, $name);
 	}
 }

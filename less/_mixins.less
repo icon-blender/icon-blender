@@ -20,7 +20,7 @@
 		@collection_prefix: @collection[@__prefix];
 		@normalized: ~'@{collection_prefix}';
 
-		.@{ib-prefix}-@{normalized}-@{name}{
+		.@{normalized}-@{name}{
 			.ib.iconUrl(@collection, @name);
 		}
 	}
