@@ -24,7 +24,7 @@
   "main": "lib/modules.js",
   "dependencies": {},
   "devDependencies": {
-    "@iconify/json": "^1.1.325",
+    "@iconify/json": "^2.1.86",
     "@iconify/json-tools": "^1.0.10",
     "jest": "^27.0.3",
     "less": "^4.1.1",
